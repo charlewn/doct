@@ -2,9 +2,11 @@
 
 https://developer.nvidia.com/cuda-80-ga2-download-archive
 
-$ sudo dpkg -i cuda-repo-ubuntu1404-8-0-local-ga2_8.0.61-1_amd64-deb
-$ sudo apt-get update
-$ sudo apt-get install cuda
+sudo dpkg -i cuda-repo-ubuntu1404-8-0-local-ga2_8.0.61-1_amd64-deb
+
+sudo apt-get update
+
+sudo apt-get install cuda
 
 sudo apt-get install cuda-toolkit-driver
 
