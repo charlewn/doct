@@ -39,6 +39,31 @@ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-8.0/lib64/
 
 sudo chmod a+r /usr/local/cuda-8.0/lib64/libcudnn*
 
+# install from deb
+sudo dpkg -i libcudnn6_6.0.21-1+cuda8.0_amd64.deb
+
+# install compatible nvidia driver
+sudo apt-get remove --purge nvidia*
+
+sudo add-apt-repository ppa:graphics-drivers/ppa
+
+sudo apt-get update
+
+options:
+nomodeset
+apt-cache search nvidia
+- install from ubuntu software with .deb
+
+# stop lightdm graphics
+sudo service lightdm stop
+
+
+
+
+sudo apt-get install nvidia-384
+
+
+
 # To remove
 sudo apt-get --purge remove cuda
 sudo apt autoremove
